@@ -128,7 +128,13 @@ func WeChatCallback(w http.ResponseWriter, r *http.Request) (*common.WeChatPayRe
 		signData = append(signData, fmt.Sprintf("%v=%v", k, v))
 	}
 
-	key := client.DefaultWechatAppClient().Key
+	var wechatClient *WechatMiniProgramClient
+	if client.DefaultWechatAppClient() == nil{
+	    wechatClient = client.DefaultWechatMiniProgramClient()
+	}else{
+	    wechatClient = client.DefaultWechatAppClient()
+	}
+	key := wechatClient.Key
 
 	mySign, err := client.WechatGenSign(key, m)
 	if err != nil {
