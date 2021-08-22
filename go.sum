@@ -1,2 +1,4 @@
+github.com/milkbobo/gopay v0.0.0-20201210063808-7d4b4028f17a h1:8E/FjJLkwkScnGbR6ZQj0J5KkUA7OA/UTG2xJlQb2tA=
+github.com/milkbobo/gopay v0.0.0-20201210063808-7d4b4028f17a/go.mod h1:CtsatVIhcjxNt7nHHPf/xaq19Ry07pWUB3VcAoMU3sk=
 github.com/shopspring/decimal v1.2.0 h1:abSATXmQEYyShuxI4/vyW3tV1MrKAJzCZ/0zLUXYbsQ=
 github.com/shopspring/decimal v1.2.0/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
